@@ -3,6 +3,5 @@
 TAPS=(
 	homebrew/cask
 	nikitabobko/homebrew-tap
-  homebrew-zathura/zathura
-  wox-launcher/wox
+  abue-ammar/tinycast
 )
