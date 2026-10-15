@@ -534894,7 +534894,7 @@
     "caveats": null,
     "caveats_rosetta": null,
     "depends_on": {
-      "linux": "#<LinuxRequirement:0x00000001228386c8>"
+      "linux": "#<LinuxRequirement:0x0000000127bf9fc8>"
     },
     "conflicts_with": null,
     "container": null,
@@ -832013,7 +832013,7 @@
     "disable_replacement_formula": null,
     "disable_replacement_cask": null,
     "disable_args": null,
-    "tap_git_head": "6a0071dc79cbcbae800f9682fd46d3e14c9250eb",
+    "tap_git_head": "3cf93e50e7ba7e3f886df98388a7e6683bad172e",
     "languages": [],
     "ruby_source_path": "Casks/tinycast-sequoia.rb",
     "ruby_source_checksum": {
@@ -832130,7 +832130,7 @@
     "disable_replacement_formula": null,
     "disable_replacement_cask": null,
     "disable_args": null,
-    "tap_git_head": "6a0071dc79cbcbae800f9682fd46d3e14c9250eb",
+    "tap_git_head": "3cf93e50e7ba7e3f886df98388a7e6683bad172e",
     "languages": [],
     "ruby_source_path": "Casks/tinycast-universal.rb",
     "ruby_source_checksum": {
@@ -832251,7 +832251,7 @@
     "disable_replacement_formula": null,
     "disable_replacement_cask": null,
     "disable_args": null,
-    "tap_git_head": "6a0071dc79cbcbae800f9682fd46d3e14c9250eb",
+    "tap_git_head": "3cf93e50e7ba7e3f886df98388a7e6683bad172e",
     "languages": [],
     "ruby_source_path": "Casks/tinycast.rb",
     "ruby_source_checksum": {
@@ -832273,9 +832273,9 @@
     ],
     "desc": "Tiny, fully native launcher, hotkeys, and clipboard history (beta channel)",
     "homepage": "https://github.com/abue-ammar/tinycast",
-    "url": "https://github.com/abue-ammar/tinycast/releases/download/v0.11.21-beta.120/Tinycast-0.11.21-beta.120.dmg",
+    "url": "https://github.com/abue-ammar/tinycast/releases/download/v0.11.22-beta.121/Tinycast-0.11.22-beta.121.dmg",
     "url_specs": {},
-    "version": "0.11.21-beta.120",
+    "version": "0.11.22-beta.121",
     "autobump": true,
     "no_autobump_message": null,
     "skip_livecheck": false,
@@ -832286,7 +832286,7 @@
     "pinned": false,
     "pinned_version": null,
     "outdated": false,
-    "sha256": "b2fe08b98e484874b25f37d68cea1a3ee8a6eb0080d891e60c657cc8fb3d839c",
+    "sha256": "23a397933d131cf51ae5837f2a257ab8d6cc825e3c3fbade2aa6ae9b3af0fdad",
     "artifacts": [
       {
         "uninstall": [
@@ -832359,11 +832359,11 @@
     "disable_replacement_formula": null,
     "disable_replacement_cask": null,
     "disable_args": null,
-    "tap_git_head": "6a0071dc79cbcbae800f9682fd46d3e14c9250eb",
+    "tap_git_head": "3cf93e50e7ba7e3f886df98388a7e6683bad172e",
     "languages": [],
     "ruby_source_path": "Casks/tinycast@beta.rb",
     "ruby_source_checksum": {
-      "sha256": "eeafe9544a559ca0fd04907e6de72ef5ecaaee9cafaf44fa08644b0968c8562b"
+      "sha256": "5ca118797316595a330cb50555542ec5a2c00ef44f337a89dd5c1950bc45d12e"
     },
     "variations": {},
     "supported_platforms": [
