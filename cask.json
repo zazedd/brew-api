@@ -536554,7 +536554,7 @@
     "caveats": null,
     "caveats_rosetta": null,
     "depends_on": {
-      "linux": "#<LinuxRequirement:0x0000000142f56ea8>"
+      "linux": "#<LinuxRequirement:0x0000000121dbdc70>"
     },
     "conflicts_with": null,
     "container": null,
@@ -904599,7 +904599,7 @@
           "bits": 64
         }
       ],
-      "linux": "#<LinuxRequirement:0x000000014375ad20>"
+      "linux": "#<LinuxRequirement:0x0000000120f38588>"
     },
     "conflicts_with": null,
     "container": null,
