@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - .github/workflows/scheduled.yml
+      - generate-cask.rb
       - taps
   schedule:
     - cron: "*/60 * * * *"
@@ -57,11 +58,17 @@ jobs:
 
           # Generate cask json files
           for i in "${TAPS[@]}"; do
-            brew ruby ./generate-cask.rb ${i}
+            brew ruby ./generate-cask.rb "${i}"
           done
 
-          # Merge cask json files to a single json file
-          jq -n '[inputs]' _data/cask/*.json > cask.json
+          # Fail before overwriting cask.json if no casks were generated.
+          shopt -s nullglob
+          cask_files=(_data/cask/*.json)
+          if (( ${#cask_files[@]} == 0 )); then
+            echo '::error::No cask JSON files were generated. Check the tap setup and cask loader output above.'
+            exit 1
+          fi
+          jq -n '[inputs]' "${cask_files[@]}" > cask.json
 
       - name: Validate JSON
         run: jq empty cask.json

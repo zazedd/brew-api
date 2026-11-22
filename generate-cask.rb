@@ -20,7 +20,12 @@ latest_macos = MacOSVersion.new(HOMEBREW_MACOS_NEWEST_SUPPORTED).to_sym
 default_arch = :intel  # NOTE: Change this to :arm if you want arm as default arch.
 Homebrew::SimulateSystem.with(os: latest_macos, arch: default_arch) do
   tap.cask_files.each do |path|
-    cask = Cask::CaskLoader.load(path)
+    # The generic loader only accepts names in newer Homebrew releases.
+    cask = if Cask::CaskLoader.respond_to?(:from_tap_path)
+      Cask::CaskLoader.from_tap_path(path)
+    else
+      Cask::CaskLoader.load(path)
+    end
     name = cask.token
     json = JSON.pretty_generate(cask.to_hash_with_variations)
 
